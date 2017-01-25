@@ -11,6 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {  // : defines a type after - in this case the type is UIViewController
     
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var label: UILabel!
 
     @IBAction func buttonTapped(_ sender: Any) { //IB action was created - IB = interface buildup - created a function
@@ -18,7 +19,11 @@ class ViewController: UIViewController {  // : defines a type after - in this ca
 //         print("Hello World!!") printed hello world every time we pressed the button 
         
 // now we want to update the label above when we tap the button
-        label.text = "Hello World!"
+//        label.text = "Hello World!"
+        
+// here now we are grabbing the value that the user typed in the text field and we are updating the label with that value 
+        
+         label.text = textField.text 
         
     }
     override func viewDidLoad() { // the word override is so that we can add more commands to a fuction that already exists somewhere else in the code
