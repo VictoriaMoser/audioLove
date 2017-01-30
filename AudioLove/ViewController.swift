@@ -21,7 +21,7 @@ class ViewController: UIViewController {  // : defines a type after - in this ca
 // now we want to update the label above when we tap the button
 //        label.text = "Hello World!"
         
-// here now we are grabbing the value that the user typed in the text field and we are updating the label with that value 
+// here now we are grabbing the value that the user typed in the text field and we are updating the label with that value
         
          label.text = textField.text 
         
